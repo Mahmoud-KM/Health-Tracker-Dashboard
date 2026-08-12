@@ -1,2 +1,102 @@
-# Health-Tracker-Dashboard
-This is a simple web application for tracking wellness activity such as the number of hours or minutes used for training, sleep and meditation in a timely basic. This is an exercise app to work on Python Flask.
+# Health Tracker Dashboard
+
+A simple, clean web app for tracking your daily health habits — exercise, meditation, and sleep — with visual charts to see your progress over time.
+
+Built with **Flask** (Python), this project lets you log daily entries, view them in an editable table, and visualize trends on an interactive dashboard.
+
+---
+
+## Features
+
+- **Home page** — quick overview and entry point into the app
+- **Enter Health Data** — log exercise (minutes), meditation (minutes), and sleep (hours) for any date
+- **Dashboard** — bar charts visualizing exercise, meditation, and sleep data across recorded dates
+- **Data table** — view, update, or delete any previously logged entry
+
+---
+
+## Screenshots
+
+### Home
+![Home page](images/home.png)
+
+### Enter Health Data
+![Data entry form](images/DATA_Insertion.png)
+
+### Dashboard
+![Dashboard with charts](images/dashboard.png)
+
+### Data Table
+![Editable data table](images/user_data_table.png)
+
+---
+
+## Tech Stack
+
+- **Backend:** Python, Flask
+- **Frontend:** HTML, CSS, JavaScript (charts)
+- **Environment:** Python virtual environment (`venv`)
+
+---
+
+## Getting Started
+
+These steps will get a local copy running on your machine.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Mahmoud-KM/Health-Tracker-Dashboard.git
+cd Health-Tracker-Dashboard
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate it
+
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux:**
+```bash
+source venv/bin/activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the app
+
+```bash
+python code/app.py
+```
+
+Then open your browser to `http://127.0.0.1:5000` (or whichever port Flask reports).
+
+---
+
+## Project Structure
+
+```
+Health-Tracker-Dashboard/
+├── code/                 # Application source code
+├── images/               # Images used in this README
+├── requirements.txt      # Python dependencies
+├── .gitignore
+└── README.md
+```
+
+---
+
+## License
+
+This project currently has no license specified. Feel free to add one (e.g. MIT) if you plan to share or accept contributions.
