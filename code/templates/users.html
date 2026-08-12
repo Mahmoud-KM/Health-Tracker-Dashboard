@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Health Data{% endblock %}
+
+{% block content %}
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Exercise</th>
+            <th>Meditation</th>
+            <th>Sleep</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.date }}</td>
+            <td>{{ user.exercise }}</td>
+            <td>{{ user.meditation }}</td>
+            <td>{{ user.sleep }}</td>
+
+            <td>
+                <!-- Update -->
+                <form method="POST" action="{{ url_for('users') }}" style="display:inline;">
+                    <input type="hidden" name="user_id" value="{{ user.id }}">
+                    <input type="date" name="date" value="{{ user.date }}" required>
+                    <input type="number" name="exercise" value="{{ user.exercise }}" required>
+                    <input type="number" name="meditation" value="{{ user.meditation }}" required>
+                    <input type="number" name="sleep" value="{{ user.sleep }}" required>
+                    <input type="submit" value="Update">
+                </form>
+
+                <!-- Delete -->
+                <form method="POST" action="{{ url_for('delete_user', id=user.id) }}" style="display:inline;">
+                    <input type="submit" value="Delete">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br>
+<a href="{{ url_for('form') }}" class="btn btn-info btn-sm">Add new record</a>
+
+<a href="{{ url_for('dashboard') }}" class="btn btn-info btn-sm">Back Dashboard</a>
+{% endblock %}
