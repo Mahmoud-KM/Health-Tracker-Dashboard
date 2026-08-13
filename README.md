@@ -125,4 +125,19 @@ It served as a hands-on way to learn and apply core Flask concepts, including:
 
 ## License
 
-This project currently has no license specified. Feel free to add one (e.g. MIT) if you plan to share or accept contributions.
+Copyright Notice and Usage Terms
+
+Copyright (c) 2026 [Your Name]
+
+This is a personal project, built for learning purposes while following a
+course on LinkedIn Learning. It is shared publicly in this repository for
+personal reference and to support knowledge-sharing with others who may
+find it useful.
+
+You are not required or expected to use this code for any purpose. If you
+do choose to reference, use, or build upon this work, attribution to the
+original author (me) is appreciated, though not strictly required.
+
+This software is provided "as is," without warranty of any kind, express
+or implied. The author and LinkedIn are not responsible for any damage,
+loss, or liability arising from the use of this work.
