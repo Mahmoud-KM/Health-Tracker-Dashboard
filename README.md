@@ -127,7 +127,7 @@ It served as a hands-on way to learn and apply core Flask concepts, including:
 
 Copyright Notice and Usage Terms
 
-Copyright (c) 2026 [Your Name]
+Copyright (c) 2026 [SOILIHI CHEIKH MOUSSA MAHMOUD]
 
 This is a personal project, built for learning purposes while following a
 course on LinkedIn Learning. It is shared publicly in this repository for
